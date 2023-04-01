@@ -1,22 +1,31 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'b1a4c546c9fa6719989ee74c5d5b1e263201b0a8',
+        'reference' => 'eaa1d315f5076af88c57f9e03518ed582972b866',
         'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'b1a4c546c9fa6719989ee74c5d5b1e263201b0a8',
+            'reference' => 'eaa1d315f5076af88c57f9e03518ed582972b866',
+            'dev_requirement' => false,
+        ),
+        'catfan/medoo' => array(
+            'pretty_version' => 'v2.1.8',
+            'version' => '2.1.8.0',
+            'type' => 'framework',
+            'install_path' => __DIR__ . '/../catfan/medoo',
+            'aliases' => array(),
+            'reference' => 'b49a620cf1ad0d2e90ebd9f85b82aa11271df5f4',
             'dev_requirement' => false,
         ),
         'composer/ca-bundle' => array(
