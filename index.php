@@ -9,27 +9,8 @@ use App\Core\Routing\Router;
 use App\Models\Product;
 use App\Models\User;
 
-$user_data = [
-    'name' => "omid" ,
-    'email' => "omid@gmail.com" ,
-    'password' => 123456
-] ;
-$userModel = new User();
-$result = $userModel->update(['name'=>'omiiiid'],['id'=>1]);
-// $user = $userModel->getAll();
-var_dump($result);
-
-// $productModel = new Product();
-// for($i = 1 ; $i <= 20 ; $i++)
-// {
-//     $productModel->create([
-//         'id' => $i ,
-//         'title' => "Product-$i",
-//     ]);
-// }
-
-// $router = new Router();
-// $router->run();
+$router = new Router();
+$router->run();
 
 
 
