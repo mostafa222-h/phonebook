@@ -50,6 +50,7 @@
                 <table id="myTable" class="table text-justify table-striped">
               
                 <thead class="tableh1">
+                <th class="">Id</th>
                 <th class="">Name</th>
                 <th class="">Phone</th>
                 <th class="">E-mail</th>
@@ -62,6 +63,7 @@
                     <?php foreach($contacts as $contact): ;?>
                    
                         <tr>
+                            <td class=""><?= $contact['id'] ?></td>
                             <td class=""><?= $contact['name'] ?></td>
                             <td class=""><?= $contact['mobile'] ?></td>
                             <td class=""><?= $contact['email'] ?></td>
