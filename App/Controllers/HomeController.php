@@ -1,10 +1,23 @@
 <?php
 namespace App\Controllers ;
 
+use App\Models\Contact;
+
 class HomeController
 {
+    private $contactModel;
+    public function __construct()
+    {
+        $this->contactModel = new Contact() ;
+    }
     public function index()
     {
-        echo "Hi From HomeController" ;
+        
+        $data = [
+            'contacts' => $this->contactModel->getAll() 
+
+        ];
+        view('home.index',$data);
+        echo "Hi From HomeController Of Phonebook" ;
     }
 }
