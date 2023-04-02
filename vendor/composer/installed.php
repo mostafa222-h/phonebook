@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'eaa1d315f5076af88c57f9e03518ed582972b866',
+        'reference' => '463b45e9fc7805cc7949b5f51fa4424c02fa2efa',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'eaa1d315f5076af88c57f9e03518ed582972b866',
+            'reference' => '463b45e9fc7805cc7949b5f51fa4424c02fa2efa',
             'dev_requirement' => false,
         ),
         'catfan/medoo' => array(
@@ -35,6 +35,15 @@
             'install_path' => __DIR__ . '/./ca-bundle',
             'aliases' => array(),
             'reference' => '74780ccf8c19d6acb8d65c5f39cd72110e132bbd',
+            'dev_requirement' => false,
+        ),
+        'fakerphp/faker' => array(
+            'pretty_version' => 'v1.21.0',
+            'version' => '1.21.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../fakerphp/faker',
+            'aliases' => array(),
+            'reference' => '92efad6a967f0b79c499705c69b662f738cc9e4d',
             'dev_requirement' => false,
         ),
         'graham-campbell/result-type' => array(
@@ -114,6 +123,24 @@
             'replaced' => array(
                 0 => '6.1.1',
             ),
+        ),
+        'psr/container' => array(
+            'pretty_version' => '2.0.2',
+            'version' => '2.0.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/container',
+            'aliases' => array(),
+            'reference' => 'c71ecc56dfe541dbd90c5360474fbc405f8d5963',
+            'dev_requirement' => false,
+        ),
+        'symfony/deprecation-contracts' => array(
+            'pretty_version' => 'v3.2.1',
+            'version' => '3.2.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/deprecation-contracts',
+            'aliases' => array(),
+            'reference' => 'e2d1534420bd723d0ef5aec58a22c5fe60ce6f5e',
+            'dev_requirement' => false,
         ),
         'symfony/polyfill-ctype' => array(
             'pretty_version' => 'v1.27.0',

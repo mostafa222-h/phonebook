@@ -48,7 +48,7 @@
         <div class="col-lg-8">
                 
                 <table id="myTable" class="table text-justify table-striped">
-           
+              
                 <thead class="tableh1">
                 <th class="">Name</th>
                 <th class="">Phone</th>
@@ -56,9 +56,12 @@
                 <th class="col-1">Actions</th>
                 <th class="col-1"></th>    
                 </thead>
-                <hr>
+              
                 <tbody id="tableBody" style="text-align: center;">
+                  
                     <?php foreach($contacts as $contact): ;?>
+                   
+                        <tr>
                             <td class=""><?= $contact['name'] ?></td>
                             <td class=""><?= $contact['mobile'] ?></td>
                             <td class=""><?= $contact['email'] ?></td>
@@ -66,9 +69,9 @@
                             <td class="col-1"></td>    
                         </tr>
                     <?php endforeach; ?>
-                    
-
                 </tbody>
+
+              
 
                
             
