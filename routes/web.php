@@ -4,6 +4,9 @@ use App\Middleware\BlockFireFox;
 use App\Middleware\BlockIE;
 
 Route::get('/','HomeController@index');
+
+
+Route::post('/contact/add','ContactController@add');
 // Route::get('/post/{slug}','PostController@single');
 // Route::get('/post/{slug}/comment/{cid}','PostController@comment');
 // Route::get('/todo/list','TodoController@list',[BlockFireFox::class,BlockIE::class]);

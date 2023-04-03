@@ -28,18 +28,21 @@
                 <div class="col-lg-4 inp">
                 <form action=""> 
                     <input onkeyup="searchFunction()" id="myInput" name ='s' class="form-control mt-2" placeholder="search">
+
+                </form>    
                     
                 <h5 class="mt-2">Add New Contact</h5>
+                    <form action="<?=site_url('contact/add')?>" method="post">
 
-                    <input onblur="validateName()" class="form-control mb-3 mt-3" placeholder="add name" id="userName">
-                    <div id="nameAlert" class="alert alert-danger text-justify p-2 ">Please add name</div>
-                    <input onblur="validatePhone()" class="form-control mb-3" placeholder="add phone" id="userPhone">
-                    <div id="phoneAlert" class="alert alert-danger text-justify p-2 ">Please add a valid number</div>
-                    <input onblur="validateEmail()" class="form-control mb-3" placeholder="add e-mail" id="userEmail">
-                    <div id="mailAlert" class="alert alert-danger text-justify p-2 ">Please add a valid e-mail</div>
+                    <input autocomplete="off" name="name"  class="form-control mb-3 mt-3" placeholder="add name" >
+                   
+                    <input autocomplete="off" name="mobile"  class="form-control mb-3" placeholder="add phone" >
+                   
+                    <input autocomplete="off" name="email"  class="form-control mb-3" placeholder="add e-mail" >
+                  
 
-                    <button onclick="addContact()" class="btn btn-info w-100 btn1">Add</button>
-    
+                    <button type="submit" class="btn btn-info w-100 btn1">Add</button>
+                    </form>
                     
                 </div>
                 

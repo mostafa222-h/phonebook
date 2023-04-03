@@ -1,6 +1,6 @@
 <?php
 
-function site_url($route)
+function site_url($route = null)
 {
     return $_ENV['HOST']. $route ;
 }
