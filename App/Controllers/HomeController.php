@@ -12,12 +12,28 @@ class HomeController
     }
     public function index()
     {
-        
-       
+        global $request;
+       $where = ['ORDER'=>["created_at" => "DESC"]] ;
+       $search_keyword = $request->input('s');
+        if(!is_null($search_keyword))
+        {
+           
+            $where['AND'] = [
+                'OR' => [
+                    "name[~]" => $search_keyword,
+                    "mobile[~]" => $search_keyword ,
+                    "email[~]" =>$search_keyword
+
+                ]
+            ];
+
+           
+        }
+       $contacts = $this->contactModel->get('*',$where);
 
         $data = [
-            'contacts' => $this->contactModel->getAll() 
-
+            'contacts' =>  $contacts ,
+            'search_keyword' => $search_keyword
         ];
         view('home.index',$data);
         echo "Hi From HomeController Of Phonebook" ;

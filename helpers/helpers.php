@@ -49,4 +49,8 @@ function nice_dd($var)
 }
 
 
+function xss_clean($str)
+{
+    return filter_var(htmlspecialchars($str),FILTER_SANITIZE_STRING);
+}
 

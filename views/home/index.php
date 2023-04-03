@@ -26,10 +26,9 @@
                 
                 
                 <div class="col-lg-4 inp">
-                
-                <input onkeyup="searchFunction()" id="myInput" class="form-control mt-2" placeholder="search">
-                <span class="icon text-primary"><i class="fas fa-search"></i></span>
-                
+                <form action=""> 
+                    <input onkeyup="searchFunction()" id="myInput" name ='s' class="form-control mt-2" placeholder="search">
+                    
                 <h5 class="mt-2">Add New Contact</h5>
 
                     <input onblur="validateName()" class="form-control mb-3 mt-3" placeholder="add name" id="userName">
@@ -46,7 +45,12 @@
                 
                 
         <div class="col-lg-8">
-                
+            <?php if(!is_null($search_keyword)): ?>
+
+                <h2 class="mb-3" style="color: aqua;">Search result For     :      <span class="text-warning" style="color: yellowgreen;"><?= $search_keyword ?></span></h2>
+
+            <?php endif; ?>    
+               
                 <table id="myTable" class="table text-justify table-striped">
               
                 <thead class="tableh1">
